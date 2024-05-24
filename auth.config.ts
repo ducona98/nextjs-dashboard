@@ -1,6 +1,7 @@
 import type { NextAuthConfig } from "next-auth";
 
 export const authConfig = {
+  basePath: process.env.NEXTAUTH_URL,
   pages: {
     signIn: "/login",
   },
